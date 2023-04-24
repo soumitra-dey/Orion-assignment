@@ -1,0 +1,32 @@
+.main{
+    width: 100%;
+    display: grid;
+    gap: 20px 30px;
+}
+.items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.items>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.items>img{
+    width: 45px;
+}
+.items>div>:first-child{
+    color: black;
+}
+.items>div>:last-child{
+    color: rgb(129,113,135);
+    text-align: left;
+}
+
+
+
+
+@media all and (max-width:800px){
+
+}

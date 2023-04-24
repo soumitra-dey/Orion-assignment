@@ -1,0 +1,112 @@
+.home6{
+    padding: 70px 150px 100px 150px;
+    background-color: rgb(65,42,76);
+}
+.home6_content>:first-child{
+    font-size: 40px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+.home6_content>div{
+    position: relative;
+}
+
+.home6_left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+    padding: 5%;
+    background-color: rgb(44,19,56);
+    color: rgb(252,229,216);
+    z-index: 1000;
+    position: relative;
+}
+.home6_left>:first-child{
+    font-size: 40px;
+    font-weight: 500;
+}
+.home6_left>:nth-child(2){
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.home6_left>div{
+    display: flex;
+    gap: 20px;
+}
+.home6_btn{
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 25px;
+    border: 0px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.home6_btn>:first-child{
+    font-size: 30px;
+}
+.home6_right{
+    width: 30%;
+    padding: 50px 40px 40px 100px;
+    background-color: rgb(252,229,216);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 100;
+}
+.home6_right>:first-child{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.home6_right>:last-child{
+    font-size: 18px;
+}
+.home6_right>button{
+    margin-top: 30px;
+    width: 200px;
+}
+
+@media all and (max-width:800px){
+    .home6{
+        padding: 0px;
+    }
+    .home6_content>:first-child{
+        display: none;
+    }
+    .home6_content>div{
+        display: flex;
+        flex-direction: column;
+    }
+    .home6_left{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+        padding: 5%;
+        background-color: rgb(44,19,56);
+        color: rgb(252,229,216);
+        z-index: 1000;
+        position: relative;
+        text-align: center;
+    }
+    .home6_left>div{
+        flex-direction: column;
+    }
+    .home6_right{
+        width: 90%;
+        padding: 5%;
+        background-color: rgb(252,229,216);
+        position: static;
+        top: 45%;
+        left: 50%;
+        z-index: 100;
+        text-align: center;
+    }
+}

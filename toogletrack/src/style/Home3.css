@@ -1,0 +1,117 @@
+.home3{
+    width: 100%;
+    margin-top: 30px;
+}
+.home3_cont{
+    padding: 5%;
+    background-color: rgb(44,19,56);
+    color: white;
+}
+.home3_cont>p{
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.home3_cont>:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.home3_box{
+    width: 90%;
+    padding: 5%;
+    border-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+.home3_box>p{
+    text-align: left;
+    font-weight: 500;
+}
+.home3_box>:nth-child(2){
+    width: 60%;
+}
+.home3_box>:last-child{
+    width: 100%;
+}
+.home3_banner{
+    display: flex;
+    width: 90%;
+    padding: 0 5%;
+    background-color: rgb(247,216,243);
+    border-radius: 20px;
+    margin-top: 30px;
+    color: black;
+    align-items: center;
+}
+.home3_banner>:first-child>:first-child{
+    font-size: 40px;
+    font-weight: 500;
+}
+.home3_banner>:first-child>:nth-child(2){
+    margin-top: 30px;
+    color: gray;
+    font-size: 20px;
+}
+.home3_banner>:first-child>:last-child{
+    margin-top: 70px;
+    cursor: pointer;
+}
+.home3_banner>:first-child>:last-child:hover{
+    color: rgb(229,124,216);
+}
+.home3_footer{
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.home3_footer>:first-child{
+    font-size: 34px;
+}
+.home3_footer>:nth-child(2){
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+.home3_footer>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+.home3_footer button{
+    width: 250px;
+}
+
+@media all and (max-width:800px){
+    .home3_cont>p{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .home3_cont>:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    .home3_banner{
+        display: none;
+    }
+    .home3_footer>:first-child{
+        font-size: 28px;
+    }
+    .home3_footer>:nth-child(2){
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .home3_footer>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 30px;
+    }
+}

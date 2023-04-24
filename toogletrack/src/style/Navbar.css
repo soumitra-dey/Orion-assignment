@@ -1,0 +1,164 @@
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+}
+/* *************************** */
+/* ********Top content******** */
+/* *************************** */
+.top_content{
+    display: flex;
+    font-size: 12px;
+    justify-content: flex-end;  
+    align-items: center;  
+    gap: 20px;
+    padding: 7px 50px;
+    background-color: rgb(229,124,216);
+}
+.top_content>p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ************************** */
+/* **********Navbar********** */
+/* ************************** */
+.nav_content{
+    width: 94%;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(44,19,56);
+    color: white;
+    height: 28px;
+}
+.nav_content p{
+    cursor: pointer;
+}
+.nav_content p:hover{
+    color: rgb(232,138,216);
+}
+.nav_left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav_left>img{
+    width: 170px;
+}
+.nav_left>div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav_right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav_right>:nth-child(2){
+    border-right: 2px solid white;
+    height: 25px;
+}
+.loginbtn{
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgb(252,229,216);
+    color: rgb(232,138,216);
+    transition: background-color .3s ease;
+}
+.loginbtn:hover{
+    background-color: #564260;
+}
+.menu{
+    display: none;
+}
+.menu_content{
+    display: none;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 75px;
+    width: 100vw;
+    left: 0;
+    background-color: rgb(252,229,216);
+}
+.backbtn{
+    display: none;
+}
+
+
+@media all and (max-width:800px){
+    .top_content{
+        display: none;
+    }
+    .nav_w{
+        height: 68px;
+    }
+    .nav_content{
+        padding: 20px 30px;
+        background-color: rgb(252,229,216);
+        width: 85%;
+    }
+    .nav_left>img{
+        width: 130px;
+    }
+    .nav_left>div{
+        display: none
+    }
+    .nav_right{
+        display: none
+    }
+    .menu{
+        display: flex;
+        color: black;
+        font-size: 25px;
+    }
+    .menu_content{
+        position: absolute;
+        color: black;
+        top: 68px;
+        left: 0;
+        background-color: rgb(252,229,216);
+        height: 90vh;
+        width: 100vw;
+    }
+    .menu_content>:first-child{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .menu_content>:first-child{
+        margin: 40px 25px;
+    }
+    .menu_content>:last-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu_content>:last-child>:last-child{
+        margin-top: 20px;
+    }
+    .loginbtn{
+        background-color: rgb(232,138,216);
+        color: rgb(248,248,248);
+        width: 200px;
+    }
+    .dropdown{
+        top: 68px;
+        height: 90vh;
+        overflow: auto;
+    }
+    .backbtn{
+        display: flex;
+        gap: 20px;
+        color: black;
+        margin-left: 30px;
+    }
+}
